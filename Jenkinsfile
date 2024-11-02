@@ -68,8 +68,6 @@ pipeline {
               steps {
                   script {
                       withCredentials([usernamePassword(credentialsId: 'jenkinspush', passwordVariable: 'PAT' , usernameVariable: 'USER')]) {
-                       //passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-                       //   sh 'git checkout master'
                           sh 'git remote set-head origin master'
                           sh 'git config --global user.email "jenkins@example.com"'
                           sh 'git config --global user.name "jenkins"'
