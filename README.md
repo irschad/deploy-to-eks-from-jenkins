@@ -152,6 +152,10 @@ pipeline {
     }
 }
 ```
+Next, execute the Jenkins pipeline and once the run is successfully completed, check the pods running: 
+```bash
+kubectl get pods
+```
 
 ---
 
