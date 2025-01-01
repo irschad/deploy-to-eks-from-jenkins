@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     echo 'deploying the application...'
-                    kubectl create deployment nginx-deployment --image nginx
+                    sh 'kubectl create deployment nginx-deployment --image nginx'
                 }
             }
         }
