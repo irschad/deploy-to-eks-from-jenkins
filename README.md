@@ -21,10 +21,7 @@ This project focuses on setting up a Continuous Deployment (CD) pipeline to depl
 
 ### 1. Install `kubectl` Inside Jenkins Container
 #### Steps:
-1. SSH into the instance hosting the Jenkins container:
-   ```bash
-   ssh <instance-address>
-   ```
+1. SSH into the instance hosting the Jenkins container.
 2. List running Docker containers to identify the Jenkins container:
    ```bash
    docker ps
